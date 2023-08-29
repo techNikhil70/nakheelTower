@@ -1,0 +1,253 @@
+@media only screen and (min-width: 200px) and (max-width: 576px) {
+	nav {
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+	}
+
+	.bars {
+		display: block;
+		padding: 10px 15px;
+		font-size: 25px;
+	}
+
+	nav ul {
+		width: 100%;
+		border:0.1px solid red;
+		flex-direction: column;
+		position: absolute;
+		top: 60px;
+		left: -5px;
+		align-items: normal;
+		opacity: 0;
+	}
+
+	nav ul li {
+		border-left: none;
+		border: 0.1px solid;
+		padding: 10px 20px;
+		text-align: center;
+		background: white;
+	}
+
+	.bars:hover ~ ul {
+		opacity: 1;
+	}
+	.side_fix {
+		position: absolute;
+		width: 100%;
+		height: 250px;
+		background: rgba(122, 108, 254, 0.781);
+		top: 725px;
+		animation: slidfix 5s alternate infinite;
+		z-index: 1;
+	}
+
+	.side_row1 {
+		display: none;
+	}
+
+	.side_row2 {
+		display: block;
+	}
+
+	.side_row2 input {
+		width: 93%;
+	}
+
+	@keyframes slidfix {
+		0% {
+			background: rgba(255,255,255,0.8);
+		}
+
+		25% {
+			background: rgba(122, 108, 254, 0.781);
+		}
+
+		50% {
+			background:  rgba(255,255,255,0.8);
+		}
+
+		75% {
+			background: rgba(122, 108, 254, 0.781);
+		}
+		100% {
+			background:  rgba(255,255,255,0.8);
+		}
+	}
+
+	main {
+		width: 100%;
+	}
+
+	.slider_img {
+		width: 100%;
+		height: 250px;
+	}
+
+	.slider1 {
+		width: 100%;
+		height: 100%;
+		top: 0px;
+		left: 0px;
+		background-size: cover;
+		animation: slid1  15s  infinite;
+	}
+
+	@keyframes slid1 {
+		0% {
+
+		}
+
+		33.33% {
+			left: -320px;
+			opacity: 1;
+		}
+		66.66% {
+			left: 320px;
+			opacity: -999;
+		}
+		66.66% {
+			left: 320px;
+			opacity: 9999;
+		}
+		100% {
+			left:0px;
+		}
+	}
+
+	.slider2 {
+		width: 100%;
+		height: 100%;
+		top: 0px;
+		left: 320px;
+		background-size: cover;
+		animation: slid2  15s  infinite;
+	}
+
+	@keyframes slid2 {
+		0% {
+
+		}
+
+		33.33% {
+			left: 0px;
+			
+		
+		}
+		66.66% {
+			left: -320px;
+			opacity: 1;
+		}
+		100% {
+			left:320px;
+			opacity: -999;
+		}
+	}
+
+	.slider3 {
+		width: 100%;
+		height: 100%;
+		top: 0px;
+		left: 320px;
+		background-size: cover;
+		animation: slid3  15s   infinite;
+	}
+
+	@keyframes slid3 {
+		0% {
+
+		}
+
+		33.33% {
+			left: 320px;
+			
+		
+		}
+		66.66% {
+			left: 0px;
+			
+		}
+		100% {
+			left:-320px;
+			
+		}
+	}
+
+	.enquire {
+		width: 100%;
+		position: absolute;
+		top: 250px;
+		left: 0px;
+		border-radius: 0px;
+		line-height: 30px;
+		padding: 0px;
+	}
+	.enquire h3 {
+		background: #003f72;
+		color: white;
+		font-size: 18px;
+		padding: 6px;
+		letter-spacing: 1px;
+	}
+
+	.enquire h1 {
+		color: #003f72;
+		font-weight: 500;
+		letter-spacing: -1px;
+	}
+
+	.enquire p {
+		text-align: left;
+		background: rgba(122, 108, 254, 0.781);
+		line-height: 20px;
+		font-size: 18px;
+		color: #000;
+		font-weight: 545;
+		padding-bottom: 5px;
+	}
+
+	.enquire_text {
+		line-height: 25px;
+		font-size: 20px;
+		padding: 4px;
+	}
+
+	.Overview {
+		width: 95%;
+		position: absolute;
+		margin: 10px;
+		top: 1000px;
+	}
+
+	.Overview_rotate {
+		display: none;
+	}
+
+	.heading1 {
+		text-align: center;
+	}
+
+	.Overview_list {
+		padding: 20px;
+	}
+
+	.Overview_list ul:nth-child(2) {
+		padding-left: 60px;
+	}
+
+	.Overview video {
+		width: 90%;
+		height: 155px;
+		padding: 10px;
+	}
+
+	.Download_Brochure {
+		width: 200px;
+		margin: 10px;
+	}
+}
+
+
+
